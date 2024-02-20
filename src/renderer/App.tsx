@@ -1,15 +1,12 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-
-function Hello() {
-  return <div className="text-black max-w-xs">ERB + TAILWIND = ❤</div>;
-}
+import HomeScreen from './HomeScreen/HomeScreen';
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Hello />} />
+        <Route path="/" element={<HomeScreen />} />
       </Routes>
     </Router>
   );
