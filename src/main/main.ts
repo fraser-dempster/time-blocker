@@ -90,6 +90,10 @@ const createWindow = async () => {
     if (process.env.START_MINIMIZED) {
       mainWindow.minimize();
     } else {
+      mainWindow.setAlwaysOnTop(true, 'floating');
+      mainWindow.setVisibleOnAllWorkspaces(true);
+      mainWindow.setFullScreenable(false);
+      mainWindow.setPosition(0, 0);
       mainWindow.show();
     }
   });
@@ -111,6 +115,8 @@ const createWindow = async () => {
   // eslint-disable-next-line
   new AppUpdater();
 };
+
+// app.dock.hide();
 
 /**
  * Add event listeners...
