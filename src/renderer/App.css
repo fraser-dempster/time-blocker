@@ -8,13 +8,10 @@
 @tailwind utilities;
 
 body {
-  /* position: relative;
-  color: white;
   height: 100vh;
-  background: linear-gradient(200.96deg, #471afd 45%, #1400ff 100%);
   font-family: sans-serif;
-  overflow-y: hidden;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }

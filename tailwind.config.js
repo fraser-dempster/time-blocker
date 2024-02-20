@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary-gradient': '#471afd',
+        'primary-gradient': '#471cfd',
         'secondary-gradient': '#1400ff',
       },
     },

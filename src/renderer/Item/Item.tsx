@@ -1,5 +1,11 @@
-export default function HomeScreen() {
+export default function Item() {
   return (
-    <div className="text-black max-w-xs text-3xl">ERB + TAILWIND = ❤</div>
+    <>
+      <div className="w-screen">
+        <div className="flex justify-center align-top h-20 rounded-lg bg-gradient-to-b from-[#3300FF] to-[#1400FF]">
+          <div></div>
+        </div>
+      </div>
+    </>
   );
 }
