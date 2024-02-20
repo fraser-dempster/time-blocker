@@ -1,8 +1,15 @@
-export default function AddButton() {
+type AddProps = {
+  handleClick: any;
+};
+
+const AddButton = ({ handleClick }: AddProps) => {
   return (
     <>
       <div className="absolute bottom-10 right-5">
-        <button className="bg-[#4CAF50] hover:bg-green-800 text-white py-4 px-4 rounded-full focus:outline-none focus:shadow-outline flex items-center justify-center">
+        <button
+          onClick={handleClick}
+          className="bg-[#4CAF50] hover:bg-green-800 text-white py-4 px-4 rounded-full focus:outline-none focus:shadow-outline flex items-center justify-center"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-10 w-10"
@@ -16,4 +23,6 @@ export default function AddButton() {
       </div>
     </>
   );
-}
+};
+
+export default AddButton;
